@@ -98,13 +98,48 @@ public class Qes1_13 {
 		float weight = 62.2f;
 		String food = "寿司";
 		
+		// 初めまして山田太郎です
 		System.out.println("初めまして" + name + "です");
+		// 年齢は18歳です
 		System.out.println("年齢は" + age + "歳です");
+		// 身長は170.5cmです
 		System.out.println("身長は" + height + "cmです");
+		// 体重は62.2kgです
 		System.out.println("体重は" + weight + "kgです");
+		// 好きな食べ物は寿司です
 		System.out.println("好きな食べ物は" + food + "です");
+		
+		// 6で作成した自己紹介に続いてBMIが出力されるようにしてください
+		// 「BMIは○○です」
+		// ただし計算は数値を直書きせず、全て変数を使ってすること
+		float m;
+		m = height/100;
+		System.out.println("BMIは" + weight / (m * m) +"です");
+		
+		// 6で宣言した変数に再代入し下記の通りコンソールに出力してください
+		// 再宣言
+		name = "鈴木一郎";
+		age = 24;
+		height = 168.5f;
+		weight = 64.2f;
+		food = "オムライス";
+		
+		// 初めまして鈴木一郎です
+		System.out.println("初めまして" + name + "です");
+		// 年齢は24歳です
+		System.out.println("年齢は" + age + "歳です");
+		// 身長は168.5cmです
+		System.out.println("身長は" + height + "cmです");
+		// 体重は64.2kgです
+		System.out.println("体重は" + weight + "kgです");
+		// 好きな食べ物はオムライスです
+		System.out.println("好きな食べ物は" + food + "です");
+		// BMIは22.6です
+		System.out.println("BMIは" + weight / (m * m) + "です");
+		
+		// 8で使用した変数【年齢・身長・体重】の数値を和算で自己代入し、下記の通りコンソールに出力してください
+		
 		
 		
 	}
-
 }
