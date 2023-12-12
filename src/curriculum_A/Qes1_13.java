@@ -231,7 +231,7 @@ public class Qes1_13 {
 		// 12で変換した【年齢・身長】で【年齢が25もしくは身長が160以上】であればtrueを出力してください
 		// ただしif文は使わないでください
 			// 年齢が25もしくは身長が160以上 であればtrue
-			System.out.println(age3 >= 25 || height3 >= 160);
+			System.out.println(age3 >= 25 || height4 >= 160);
 			
 	}
 }
