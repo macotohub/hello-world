@@ -124,9 +124,13 @@ public class Qes1_13 {
 		// 6で作成した自己紹介に続いてBMIが出力されるようにしてください
 		// 「BMIは○○です」
 		// ただし計算は数値を直書きせず、全て変数を使ってすること
+			// 身長の値をcmからmにする
 			double m = height/100;
+			// BMIの計算
 			double result = weight / (m * m);
+			// 小数第二位で四捨五入する
 			double bmi = ((double)Math.round(result * 10))/10;
+			// BMIは21.4です
 			System.out.println("BMIは" + bmi +"です");
 			
 			// 改行
@@ -162,6 +166,7 @@ public class Qes1_13 {
 			
 		
 		// 8で使用した変数【年齢・身長・体重】の数値を和算で自己代入し、下記の通りコンソールに出力してください
+			// 和算で自己代入
 			age += 24;
 			height += 168.5;
 			weight += 64.2;
@@ -171,15 +176,15 @@ public class Qes1_13 {
 			
 			// 初めまして鈴木一郎です
 			System.out.println("初めまして" + name + "です");
-			// 年齢は24歳です
+			// 年齢は48歳です
 			System.out.println("年齢は" + age + "歳です");
-			// 身長は168.5cmです
+			// 身長は337.0cmです
 			System.out.println("身長は" + height + "cmです");
-			// 体重は64.2kgです
+			// 体重は128.4kgです
 			System.out.println("体重は" + weight + "kgです");
 			// 好きな食べ物はオムライスです
 			System.out.println("好きな食べ物は" + food + "です");
-			// BMIは22.6です
+			// BMIは11.31です
 			System.out.println("BMIは" + bmi + "です");
 			
 			// 改行
@@ -187,6 +192,7 @@ public class Qes1_13 {
 			
 	
 		// 8で使用した年齢が25歳以上ならtrueが出力されるようにしてください。ただしif文は使いません
+			// 年齢が25歳以上ならtrue
 			System.out.println(age >= 25);
 			
 			// 改行
@@ -209,11 +215,14 @@ public class Qes1_13 {
 		// 11で変換した【年齢・身長】を整数型に変換して出力してください
 			// 整数型に変換
 			int age3 = Integer.parseInt(age2);
+			// 倍精度浮動小数点数型に変換
 			double height3 = Double.parseDouble(height2);
+			// 小数点型から整数型に変換
+			int height4 = (int)height3;
 			
-			// 繋げて出力
+			// 出力
 			System.out.println(age3);
-			System.out.println(height3);
+			System.out.println(height4);
 			
 			// 改行
 			System.out.println();
@@ -221,6 +230,8 @@ public class Qes1_13 {
 		
 		// 12で変換した【年齢・身長】で【年齢が25もしくは身長が160以上】であればtrueを出力してください
 		// ただしif文は使わないでください
+			// 年齢が25もしくは身長が160以上 であればtrue
 			System.out.println(age3 >= 25 || height3 >= 160);
+			
 	}
 }
