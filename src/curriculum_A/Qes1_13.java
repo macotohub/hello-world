@@ -71,15 +71,23 @@ public class Qes1_13 {
 			System.out.println(i5 / i1);
 			// -90　10引く100をする
 			System.out.println(i - i1);
-		
+			
+			// 改行
+			System.out.println();
+			
+			
 		// 次のプログラムを実行すると「ハローJAVA2023」という結果が表示されます。
 		// 「ハローJAVA43」と表示とさせたいのですが、意図通りに動きません。正しく動作するように修正してください。
 			String num="20";
 			int num1=23;
 			// Stringクラスをint型に変換する
 			int number = Integer.parseInt(num);
-			
+			// 「ハローJAVA43」の表示
 			System.out.println("ハローJAVA"+(number+num1));
+			
+			// 改行
+			System.out.println();
+			
 		
 		// 『』で囲われた人の情報を変数にして、formatの通りコンソールに出力してください
 		// ローカル変数に代入し○○に入れてください
@@ -108,6 +116,10 @@ public class Qes1_13 {
 			System.out.println("体重は" + weight + "kgです");
 			// 好きな食べ物は寿司です
 			System.out.println("好きな食べ物は" + food + "です");
+			
+			// 改行
+			System.out.println();
+			
 		
 		// 6で作成した自己紹介に続いてBMIが出力されるようにしてください
 		// 「BMIは○○です」
@@ -116,6 +128,10 @@ public class Qes1_13 {
 			double result = weight / (m * m);
 			double bmi = ((double)Math.round(result * 10))/10;
 			System.out.println("BMIは" + bmi +"です");
+			
+			// 改行
+			System.out.println();
+			
 		
 		// 6で宣言した変数に再代入し下記の通りコンソールに出力してください
 			// 再代入
@@ -140,6 +156,10 @@ public class Qes1_13 {
 			System.out.println("好きな食べ物は" + food + "です");
 			// BMIは22.6です
 			System.out.println("BMIは" + bmi + "です");
+			
+			// 改行
+			System.out.println();
+			
 		
 		// 8で使用した変数【年齢・身長・体重】の数値を和算で自己代入し、下記の通りコンソールに出力してください
 			age += 24;
@@ -161,9 +181,17 @@ public class Qes1_13 {
 			System.out.println("好きな食べ物は" + food + "です");
 			// BMIは22.6です
 			System.out.println("BMIは" + bmi + "です");
+			
+			// 改行
+			System.out.println();
+			
 	
 		// 8で使用した年齢が25歳以上ならtrueが出力されるようにしてください。ただしif文は使いません
 			System.out.println(age >= 25);
+			
+			// 改行
+			System.out.println();
+			
 		
 		// 8で使用した【年齢・身長・体重】を文字列型に型変換し繋げて出力してください
 			// 数値型を文字列型に変換
@@ -173,6 +201,10 @@ public class Qes1_13 {
 			
 			// 繋げて出力
 			System.out.println(age2 + height2 + weight2);
+			
+			// 改行
+			System.out.println();
+			
 		
 		// 11で変換した【年齢・身長】を整数型に変換して出力してください
 			// 整数型に変換
@@ -182,6 +214,10 @@ public class Qes1_13 {
 			// 繋げて出力
 			System.out.println(age3);
 			System.out.println(height3);
+			
+			// 改行
+			System.out.println();
+			
 		
 		// 12で変換した【年齢・身長】で【年齢が25もしくは身長が160以上】であればtrueを出力してください
 		// ただしif文は使わないでください
