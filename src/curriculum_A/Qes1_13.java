@@ -233,5 +233,6 @@ public class Qes1_13 {
 			// 年齢が25もしくは身長が160以上 であればtrue
 			System.out.println(age3 >= 25 || height4 >= 160);
 			
+			
 	}
 }
