@@ -192,6 +192,15 @@ public class Qes1_13 {
 			
 	
 		// 8で使用した年齢が25歳以上ならtrueが出力されるようにしてください。ただしif文は使いません
+			//　再定義
+			age = 24;
+			height = 168.5;
+			weight = 64.2;
+			food = "オムライス";
+			m = height/100;
+			result = weight / (m * m);
+			bmi = ((double)Math.round(result * 10))/10;
+					
 			// 年齢が25歳以上ならtrue
 			System.out.println(age >= 25);
 			
