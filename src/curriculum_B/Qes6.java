@@ -7,62 +7,37 @@ public class Qes6 {
 
 	public static void main(String[] args) {
 		// TODO 自動生成されたメソッド・スタブ
-
-		// ・条件演算子を使用すること　※普通のif文は使用不可
-		// ・Switch文内でテレビとディスプレイは続けて書くようにしてください、条件演算子で出力される値を変更してください
-		// ・テレビとディスプレイは同じ商品扱いとし、ディスプレイが出た場合は最大個数の11個からランダムで出た数字を引いて出力してください 
-		// ・例：テレビと受け取った場合、→「テレビの残り台数は〇〇台です」※〇〇はランダムで出た数字
 		
+		// テレビとディスプレイ用の変数宣言と値の初期化
+		int tv = -1;
 		
-		// 家電をhomeApplianceに格納
-		//String homeAppliance[] = {"パソコン","冷蔵庫","扇風機","洗濯機","加湿器","テレビ","ディスプレイ"};
-		
-		for(;;) {
-			Scanner scanner = new Scanner(System.in);
-			String text = scanner.next();
-			String[] array = {text};
-			array = text.split("、");
-			
-			
-			for(String str:array) {
-				switch(str) {
-					case "パソコン":
-						System.out.println("パソコンの残り台数は"+remaining()+"台です");
-						break;
-					case "冷蔵庫":
-						System.out.println("冷蔵庫の残り台数は"+remaining()+"台です");
-						break;
-					case "扇風機":
-						System.out.println("扇風機の残り台数は"+remaining()+"台です");
-						break;
-					case "洗濯機":
-						System.out.println("洗濯機の残り台数は"+remaining()+"台です");
-						break;
-					case "加湿器":
-						System.out.println("加湿器の残り台数は"+remaining()+"台です");
-						break;
-					case "テレビ":
-						System.out.println("テレビの残り台数は"+remaining()+"台です");
-						break;
-					case "ディスプレイ":
-						System.out.println("ディスプレイの残り台数は"+remaining()+"台です");
-						break;
-						
-					// 指定の家電以外が入力されたらエラー文を表示させる	
-					default:
-						System.out.println("『"+str+"』は指定の商品ではありません");
-					}	
-			};
-		}
-		
-		
-	}
-	
-	
-	// 残数をランダムに出すメソッド
-	public static int remaining() {
+		// コンソールに文字を入力
+		Scanner scanner = new Scanner(System.in);
+		// 入力した文字を「、」区切りでarray配列に格納
+		String[] array = scanner.next().split("、");
+		// 在庫残数用、変数remainingに0-11までのランダムな数値を入れる
 		Random rand = new Random();
-		// 0~11でランダムに出た値を返す
-		return rand.nextInt(11);
-	};
+		int remaining = rand.nextInt(12);
+		
+		// 入力した文字を変数str１つずつ代入、配列内の個数分繰り返す
+		for(String str:array) {
+			switch(str) {
+				// これらの家電だったら残数を表示
+				case "パソコン","冷蔵庫","扇風機","洗濯機","加湿器":
+					System.out.println(str + "の残り台数は" + remaining + "台です\n");
+					break;
+					
+				// 	テレビかディスプレイだった場合
+				case "テレビ","ディスプレイ":
+					// 変数tvが-1だったらランダムな変数を代入そうでなかったら11からtvを引く
+					tv = tv == -1 ? remaining : 11 - tv;
+					System.out.println(str + "の残り台数は" + tv + "台です\n");
+					break;
+					
+				// 指定の家電以外が入力されたらエラー文を表示させる	
+				default:
+					System.out.println("『" + str + "』は指定の商品ではありません\n");
+			}
+		}
+	}
 }
