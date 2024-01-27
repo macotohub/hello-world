@@ -94,5 +94,7 @@ public class Qes7 {
 		
 		// 全体の平均点を小数第二位まで表示
 		System.out.println("全体の平均点は"+ String.format("%.2f", all) + "点です。");
+		
+		scanner.close();
 	}
 }
