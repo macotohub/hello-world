@@ -46,6 +46,4 @@ public class Curriculum_New_1_18 {
 		array(arr);
 		
 	}
-	
-
 }
