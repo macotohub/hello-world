@@ -45,6 +45,5 @@ public class Curriculum_New_1_18 {
 		int[] arr = {1,3,5,7,9,11};
 		array(arr);
 		
-		
 	}
 }
